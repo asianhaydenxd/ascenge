@@ -12,4 +12,12 @@ struct PositionComponent
     int y;
 };
 
+struct RendererComponent
+{
+    bool enabled;
+    char sprite[64];
+    int xOffset;
+    int yOffset;
+};
+
 #endif
