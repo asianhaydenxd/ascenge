@@ -12,6 +12,7 @@ struct Entity
     size_t id;
     struct PositionComponent position;
     struct RendererComponent renderer;
+    struct CameraComponent camera;
 };
 
 struct Scene

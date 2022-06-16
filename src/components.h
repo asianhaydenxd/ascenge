@@ -20,4 +20,17 @@ struct RendererComponent
     int yOffset;
 };
 
+struct CameraComponent
+{
+    bool enabled;
+
+    // Width and height of display in chars
+    int width;
+    int height;
+
+    // Top-left corner of the screen in terms of chars
+    int screenX;
+    int screenY;
+};
+
 #endif
