@@ -33,4 +33,13 @@ struct CameraComponent
     int screenY;
 };
 
+struct VelocityComponent
+{
+    bool enabled;
+
+    // Number of seconds to travel 1 ASCII block (lower == faster speed)
+    float xVelocity;
+    float yVelocity;
+};
+
 #endif

@@ -13,6 +13,7 @@ struct Entity
     struct PositionComponent position;
     struct RendererComponent renderer;
     struct CameraComponent camera;
+    struct VelocityComponent velocity;
 };
 
 struct Scene
