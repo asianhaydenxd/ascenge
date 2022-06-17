@@ -24,4 +24,7 @@ struct Project
     struct VelocityComponent velocityComponents[ENTITY_CAP];
 };
 
+struct Entity addEntity(struct Project *project, char name[]);
+struct Entity findEntity(struct Project project, char name[]);
+
 #endif
