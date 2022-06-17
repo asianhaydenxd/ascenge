@@ -4,7 +4,6 @@
 #define ASCIIENGINE_H
 
 #define ENTITY_CAP 256
-#define SCENE_CAP 16
 
 #include <stddef.h>
 #include "components.h"
@@ -15,7 +14,7 @@ struct Entity
     size_t id;
 };
 
-struct Scene
+struct Project
 {
     struct Entity entities[ENTITY_CAP];
     
@@ -23,11 +22,6 @@ struct Scene
     struct RendererComponent rendererComponents[ENTITY_CAP];
     struct CameraComponent cameraComponents[ENTITY_CAP];
     struct VelocityComponent velocityComponents[ENTITY_CAP];
-};
-
-struct Project
-{
-    struct Scene scenes[SCENE_CAP];
 };
 
 #endif
