@@ -4,9 +4,11 @@
 #define COMPONENTS_H
 
 #include <stdbool.h>
+#include <stddef.h>
 
 struct PositionComponent
 {
+    size_t entityId;
     bool enabled;
     int x;
     int y;
@@ -14,14 +16,16 @@ struct PositionComponent
 
 struct RendererComponent
 {
+    size_t entityId;
     bool enabled;
-    char sprite[64];
+    char sprite[8][8];
     int xOffset;
     int yOffset;
 };
 
 struct CameraComponent
 {
+    size_t entityId;
     bool enabled;
 
     // Width and height of display in chars
@@ -35,6 +39,7 @@ struct CameraComponent
 
 struct VelocityComponent
 {
+    size_t entityId;
     bool enabled;
 
     // Number of seconds to travel 1 ASCII block (lower == faster speed)
